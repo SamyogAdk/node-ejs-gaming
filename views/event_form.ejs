@@ -1,0 +1,22 @@
+<h1 class="text-primary">Event Registration</h1>
+<form>
+    <div class="form-group">
+        <label for=""><h3>Name</h3></label>
+        <input type="text" name="name" disabled id="name" class="form-control" value="<%= name %>" aria-describedby="helpId">
+      </div>
+      <div class="form-group">
+        <label for=""><h3>Email</h3></label>
+        <input type="text" name="email" disabled id="name" class="form-control" value="<%= email %>" aria-describedby="helpId">
+      </div>
+      <div class="form-group">
+        <label for=""><h3>Event</h3></label>
+        <select class="form-control" name="event">
+            <option>FIFA 20</option>
+            <option>PUBG</option>
+            <option>DOTA 2</option>
+            <option>Counter Strike</option>
+        </select>
+      </div>
+      <button class="btn btn-primary btn-block" onclick="alert('successfully registered')">Register</button>
+      <a href="/dashboard" class="btn btn-success btn-block">Back to main page</a>
+</form>

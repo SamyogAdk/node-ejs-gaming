@@ -1,0 +1,29 @@
+<h1 class="mt-4 text-primary">The Gamocracy</h1>
+<em><h4 class="text-secondary">of the gamers, by the gamers, for the gamers</h4></em>
+<div class="bg-warning" style="padding: 20px;">
+    <p>Signed in as </p>
+    <p class="text-dark" style="font-size:25px;"><%= name %></p>
+    
+    <a href="/users/login" class="btn btn-danger">Logout</a></div>
+
+    <h2 class="text-secondary" style="margin-top: 10px;">Register for gaming events</h2>
+
+<% gameEvent = [{name:'FIFA', imgUrl:'https://cdn-cf.gamivo.com/image_cover.jpg?f=119017&n=5805578354235019.jpg&h=88103348f99af3090a45b17e06b05e82'},{name:'PUBG', imgUrl:'https://cdn.mos.cms.futurecdn.net/T9PoXfiJc8VxSZA7AKnBPP-597-80.jpg'},{name:'Counter Strike', imgUrl:'https://steamcdn-a.akamaihd.net/steam/apps/730/capsule_616x353.jpg?t=1592263625'},{name:'Dota 2', imgUrl:'https://images.firstpost.com/wp-content/uploads/2019/04/dota-2-valve.jpg'}] %>
+
+<div class="row mt-5">
+<% gameEvent.map((game) => { %>
+  
+        <div class="col-md-6">
+          <div class="card card-body">
+            <h1 class="text-center mb-3"><%= game.name %></h1>
+            <img src="<%= game.imgUrl %>" height="300px">
+            <a class="btn btn-primary btn-block" href="./event_form">Register</a>
+          </div>
+        </div>
+     
+<% }) %>
+<img src="">
+</div>
+<div class="footer bg-warning" style="margin-top: 20px; padding: 20px; height: 100px;">
+    <p class="text-dark text-center">&copy; copyright property of gamocracy.co</p>
+</div>
