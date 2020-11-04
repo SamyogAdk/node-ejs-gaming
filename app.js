@@ -66,29 +66,6 @@ app.listen(PORT, ()=>{
     console.log(`server started at port ${PORT}`);
 })
 
-//app.use(express.json());
-
-/*app.get('/',(req,res)=>{
-    res.send('Home page');
-})
-app.get('/api/employees',(req,res)=>{
-    res.send(employees);
-})
-app.get('/api/employees/:id',(req,res)=>{
-    const emp = employees.find(em => em.id === parseInt(req.params.id))
-    if(!emp) res.status(404).send("Employee Not Found")
-    res.send(emp);
-})
-
-app.post('/api/employees',(req,res)=>{
-    const employee = {
-        id: employees.length + 1,
-        name:req.body.name,
-        post:req.body.post
-    }
-    employees.push(employee);
-    res.send(employees);    
-})*/
 
 
 
